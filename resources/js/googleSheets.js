@@ -10,6 +10,7 @@ function setUpGoogleSheets() {
       btn.innerHTML = "Sending..."
 
       let fd = getData(false)
+      console.log(fd);
       for (const [key, value] of fd) {
         console.log(`${key}: ${value}\n`);
       }

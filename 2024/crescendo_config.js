@@ -22,7 +22,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match Level",
-      "gsCol:" "l",
+      "gsCol": "l",
       "code": "l",
       "type": "level",
       "choices": {
@@ -42,7 +42,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Robot",
-      "gsCol:" "r",
+      "gsCol": "r",
       "code": "r",
       "type": "robot",
       "choices": {
@@ -56,14 +56,14 @@ var config_data = `
       "required":"true"
     },
     { "name": "Team #",
-      "gsCol:" "t",
+      "gsCol": "t",
       "code": "t",
       "type": "team",
       "min": 1,
       "max": 99999
     },
     { "name": "Auto Start Position",
-      "gsCol:" "as",
+      "gsCol": "as",
       "code": "as",
       "type": "clickable_image",
       "filename": "2024/field_image.png",
@@ -74,7 +74,7 @@ var config_data = `
   ],
   "auton": [
     { "name": "Leave Starting Zone",
-      "gsCol:" "al",
+      "gsCol": "al",
       "code": "al",
       "type": "bool"
     },
