@@ -22,7 +22,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match Level",
-      "gsCol:" "l";
+      "gsCol:" "l",
       "code": "l",
       "type": "level",
       "choices": {
