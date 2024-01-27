@@ -108,7 +108,7 @@ html, body{
 }
 
 h1{
-    font-family: Alexis;
+    font-family: Roboto;
     text-align: center;
     border-style: groove;
     border-color: white;
@@ -123,7 +123,7 @@ h1{
 }
 
 h2{
-    font-family: Alexis;
+    font-family: Roboto;
     text-align: center;
     font-size: 30px;
     font-weight: 300;
@@ -169,7 +169,7 @@ h2{
 }
 
 .undoButton, .flipButton {
-    font-family: Alexis;
+    font-family: Roboto;
     background-color: black;
     padding: 10px;
     color: white;
@@ -177,13 +177,13 @@ h2{
 }
 
 #prevButton7, #prevButton8, #prevButton9{
-    font-family: Alexis;
+    font-family: Roboto;
     background-color: rgb(151, 199, 240);
     padding: 10px;
 }
 
 #prevButton1, #prevButton2, #prevButton3, #prevButton4, #prevButton5, #prevButton6{
-    font-family: Alexis;
+    font-family: Roboto;
     background-color: black;
     padding: 10px;
     color: white;
@@ -199,13 +199,13 @@ h2{
 h1 .odd {
     font-family: Alexis;
     text-align: center;
-    color: #0AB4EC;
+    color: #000000;
 }
 
 h1 .even {
     font-family: Alexis;
     text-align: center;
-    color: #42B333;
+    color: #b4221a;
 }
 
 table {
