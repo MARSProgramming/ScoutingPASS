@@ -6,6 +6,20 @@
     src: url("../fonts/alexisv3.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: normal; 
+    src: local('Inter-Regular'), url('../fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'InterBold';
+    font-style: bold;
+    font-weight: bold;
+    src: local('Inter-Bold'), url('../fonts/Inter-Bold.ttf') format('truetype');
+}
+
 html, body{
     height: 100%;
     width: 100%;
@@ -17,7 +31,7 @@ html, body{
 
 #prematch_table, #postmatch_table {
 
-    font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-family : -apple-system, BlinkMacSystemFont, InterRegular, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     text-align: center;
     color: white;
     font-size: 13px;
@@ -28,7 +42,7 @@ html, body{
 }
 
 #auton_table, #endgame_table, #teleop_table {
-    font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-family : -apple-system, BlinkMacSystemFont, InterRegular, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     color: black;
     font-size: 13px;
     font-style: bold;
@@ -38,12 +52,12 @@ html, body{
 }
 
 .button {
-    font-family: Alexis;
+    font-family: InterBold;
     font-size: 16px;
 }
 
 #autonHeader, #endgameHeader, #teleopHeader1, #teleopHeader2{
-    color: black;
+    color: #b52218;;
     border-color: black;
     border-width: 4px;
 }
@@ -82,7 +96,7 @@ html, body{
     top: 0;
     color: white;
     background-color: black;
-    font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-family : -apple-system, BlinkMacSystemFont, InterRegular, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     text-align: justify;
 }
 
@@ -108,14 +122,17 @@ html, body{
 }
 
 h1{
-    font-family: Roboto;
+    font-family: Alexis;
     text-align: center;
+    color: #b52218;
     border-style: groove;
-    border-color: white;
+    border-color: #b52218;
     border-width: 2px;
     font-size: 40px;
     padding: 10px;
     font-weight: 350;
+
+    
 }
 
 #page2, #page4 {
@@ -123,11 +140,11 @@ h1{
 }
 
 h2{
-    font-family: Roboto;
+    font-family: Alexis;
     text-align: center;
     font-size: 30px;
     font-weight: 300;
-    font-style: italic;
+
 }
 
 .match-label{
@@ -138,7 +155,7 @@ h2{
     width: 48%;
     margin: 1vw;
     height: 100%;
-    font: roboto;
+    font: InterRegular;
 }
 
 .half-button-r{
@@ -146,7 +163,7 @@ h2{
     height: 100%;
     width: 48%;
     margin: 1vw;
-    font: roboto;
+    font: Alexis;
 }
 
 .half-button-container{
@@ -156,9 +173,11 @@ h2{
 #nextButton1, #nextButton2, #nextButton9, #nextButton10, .clearForm, .submitForm, #displayButton, #copyButton {
     font-family: Alexis;
     padding: 10px;
-    background-color: rgb(151, 199, 240);
+    background-color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
     display: inline-block;
+    border-radius: 16px;
 }
 
 #nextButton3, #nextButton4, #nextButton5, #nextButton6, #nextButton7, #nextButton8 {
@@ -166,27 +185,31 @@ h2{
     background-color: black;
     padding: 10px;
     color: white;
+    border-radius: 16px;
 }
 
 .undoButton, .flipButton {
-    font-family: Roboto;
-    background-color: black;
+    font-family: Alexis;
+    background-color: #b52218;
     padding: 10px;
     color: white;
     margin-left: 20px;
 }
 
 #prevButton7, #prevButton8, #prevButton9{
-    font-family: Roboto;
-    background-color: rgb(151, 199, 240);
+    font-family: Alexis;
+    background-color: rgb(0, 0, 0);
+    color: white;
     padding: 10px;
+    border-radius: 16px;
 }
 
 #prevButton1, #prevButton2, #prevButton3, #prevButton4, #prevButton5, #prevButton6{
-    font-family: Roboto;
+    font-family: Alexis;
     background-color: black;
     padding: 10px;
     color: white;
+    border-radius: 16px;
 
 }
 
@@ -219,7 +242,7 @@ td {
 
 input {
     font-size: 16px;
-    font: roboto;
+    font: InterRegular;
     color: black;
     background-color: white;
 }
@@ -227,11 +250,13 @@ input {
 .title {
     width: "50%";
     text-align: right;
+    color: white;
 }
 
 .field {
     width: "50%";
     text-align: left;
+    color:white;
 }
 
 #qr-table {
