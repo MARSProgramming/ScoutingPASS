@@ -854,7 +854,7 @@ function getData(dataFormat) {
     return JSON.stringify(object);
   } else if (dataFormat == "post") {
     Array.from(fd.keys()).forEach(thisKey => {
-      str.push(thisKey + "=" + fd.get(thisKey))
+      str.push(encodeURIComponent(thisKey) + "=" + encodeURIComponent(fd.get(thisKey)))
     });
     return str.join("&")
   } else if (dataFormat == "tsv") {   
