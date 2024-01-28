@@ -74,39 +74,39 @@ var config_data = `
   ],
   "auton": [
     { "name": "Leave Starting Zone",
-      "gsCol": "AutoLeave",
+      "gsCol": "al",
       "code": "al",
       "type": "bool"
     },
     { "name": "Amp Scores",
-      "gsCol": "AutoAmpCount",
+      "gsCol": "aas",
       "code": "aas",
       "type": "counter"
     },
     { "name": "Speaker Scores",
-      "gsCol": "AutoSpeakerCount",
+      "gsCol": "ass",
       "code": "ass",
       "type": "counter"
     }
   ],
   "teleop": [
     { "name": "Amp Scores",
-      "gsCol": "TeleopAmpCount",
+      "gsCol": "tas",
       "code": "tas",
       "type": "counter"
     },
     { "name": "Speaker Scores",
-      "gsCol": "TeleopSpeakerCount",
+      "gsCol": "tss",
       "code": "tss",
       "type": "counter"
     },
-    { "name": "Times Amplified",
-      "gsCol": "AmplifyCounter",
-      "code": "tta",
+    { "name": "Shots Missed",
+      "gsCol": "tsm",
+      "code": "tsm",
       "type": "counter"
     },
     { "name": "Pickup From",
-      "gsCol": "IntakeForm",
+      "gsCol": "tpu",
       "code": "tpu",
       "type": "radio",
       "choices": {
@@ -120,12 +120,12 @@ var config_data = `
   ],
   "endgame": [
     { "name": "Stage Timer",
-      "gsCol": "StageTimer",
+      "gsCol": "dt",
       "code": "dt",
       "type": "timer"
     },
     { "name": "Final Status",
-      "gsCol": "Stage",
+      "gsCol": "fs",
       "code": "fs",
       "type":"radio",
       "choices": {
@@ -139,7 +139,7 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Note in Trap",
-      "gsCol": "NoteInTrap",
+      "gsCol": "nit",
       "code": "nit",
       "type": "bool"
     }
@@ -150,10 +150,10 @@ var config_data = `
       "code": "ds",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
+        "1": "Not Effective<br>",
+        "2": "Average<br>",
+        "3": "Very Effective<br>",
+        "0": "Not Observed"
       },
       "defaultValue": "x"
     },
@@ -162,11 +162,11 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
+        "1": "Below Average<br>",
+        "2": "Average<br>",
+        "3": "Good<br>",
+        "4": "Excellent<br>",
+        "0": "Did not play defense"
       },
       "defaultValue": "x"
     },
@@ -200,12 +200,12 @@ var config_data = `
     },
     { "name": "Make good<br>alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "gsCol": "all",
+      "gsCol": "part",
       "code": "all",
       "type": "bool"
     },
     { "name": "Comments",
-      "gsCol": "Comments",
+      "gsCol": "cm",
       "code": "co",
       "type": "text",
       "size": 15,
