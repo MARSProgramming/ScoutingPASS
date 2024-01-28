@@ -846,7 +846,18 @@ function getData(dataFormat) {
       str.push(thisKey + "=" + fd.get(thisKey))
     });
     return str.join(";")
-  } else if (dataFormat == "tsv") {
+  } else if (dataFormat == "json") {
+    var object = {};
+    fd.forEach(function(value, key){
+        object[key] = value;
+    });
+    return JSON.stringify(object);
+  } else if (dataFormat == "post") {
+    Array.from(fd.keys()).forEach(thisKey => {
+      str.push(thisKey + "=" + fd.get(thisKey))
+    });
+    return str.join("&")
+  } else if (dataFormat == "tsv") {   
     Array.from(fd.keys()).forEach(thisKey => {
       str.push(fd.get(thisKey))
     });

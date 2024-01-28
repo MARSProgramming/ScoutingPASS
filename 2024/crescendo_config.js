@@ -74,58 +74,58 @@ var config_data = `
   ],
   "auton": [
     { "name": "Leave Starting Zone",
-      "gsCol": "al",
+      "gsCol": "AutoLeave",
       "code": "al",
       "type": "bool"
     },
     { "name": "Amp Scores",
-      "gsCol": "aas",
+      "gsCol": "AutoAmpCount",
       "code": "aas",
       "type": "counter"
     },
     { "name": "Speaker Scores",
-      "gsCol": "ass",
+      "gsCol": "AutoSpeakerCount",
       "code": "ass",
       "type": "counter"
     }
   ],
   "teleop": [
     { "name": "Amp Scores",
-      "gsCol": "tas",
+      "gsCol": "TeleopAmpCount",
       "code": "tas",
       "type": "counter"
     },
     { "name": "Speaker Scores",
-      "gsCol": "tss",
+      "gsCol": "TeleopSpeakerCount",
       "code": "tss",
       "type": "counter"
     },
     { "name": "Times Amplified",
-      "gsCol": "tta",
+      "gsCol": "AmplifyCounter",
       "code": "tta",
       "type": "counter"
     },
     { "name": "Pickup From",
-      "gsCol": "tpu",
+      "gsCol": "IntakeForm",
       "code": "tpu",
       "type": "radio",
       "choices": {
         "s": "Source<br>",
         "f": "Floor<br>",
         "b": "Both<br>",
-        "x": "Not Attempted"
+        "x": "Neither"
       },
       "defaultValue": "x"
     }
   ],
   "endgame": [
     { "name": "Stage Timer",
-      "gsCol": "dt",
+      "gsCol": "StageTimer",
       "code": "dt",
       "type": "timer"
     },
     { "name": "Final Status",
-      "gsCol": "fs",
+      "gsCol": "Stage",
       "code": "fs",
       "type":"radio",
       "choices": {
@@ -139,7 +139,7 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Note in Trap",
-      "gsCol": "nit",
+      "gsCol": "NoteInTrap",
       "code": "nit",
       "type": "bool"
     }
@@ -205,7 +205,7 @@ var config_data = `
       "type": "bool"
     },
     { "name": "Comments",
-      "gsCol": "co",
+      "gsCol": "Comments",
       "code": "co",
       "type": "text",
       "size": 15,
