@@ -122,7 +122,8 @@ var config_data = `
     { "name": "Stage Timer",
       "gsCol": "dt",
       "code": "dt",
-      "type": "timer"
+      "type": "timer",
+      "required": "true"
     },
     { "name": "Final Status",
       "gsCol": "fs",
@@ -136,7 +137,8 @@ var config_data = `
         "a": "Attempted but failed<br>",
         "x": "Not attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "x",
+      "required": "true"
     },
     { "name": "Note in Trap",
       "gsCol": "nit",
@@ -168,7 +170,7 @@ var config_data = `
         "4": "Excellent<br>",
         "0": "Did not play defense"
       },
-      "defaultValue": "x"
+      "defaultValue": "0"
     },
     { "name": "Speed Rating",
       "gsCol": "sr",
