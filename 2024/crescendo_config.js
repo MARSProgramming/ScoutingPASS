@@ -195,9 +195,9 @@ var config_data = `
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Notes (>2)",
-      "gsCol": "dn",
-      "code": "dn",
+    { "name": "Got Note Stuck",
+      "gsCol": "ns",
+      "code": "ns",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
